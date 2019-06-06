@@ -6,7 +6,7 @@ module.exports = {
 	htmlPluginOptions: {
         inject: false,
         template: "./src/index.html",
-        filename: './index.aspx',
+        filename: './index.html',
         header: statics.aspxHeader,
         projectName: projectInfo.name
 	},
