@@ -1,0 +1,42 @@
+{
+  "name": "pdSGS",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "scripts": {
+    "devBuild": "webpack --config ./webpackConfigs/webpack.config.dev.js",
+    "prodBuild": "webpack --config ./webpackConfigs/webpack.config.prod.js",
+    "publish": "node ./processFile.js",
+    "devPublish": "run-s devBuild publish",
+    "prodPublish": "run-s prodBuild publish"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.0.0",
+    "jquery": "^3.0.0",
+    "lodash": "^4.0.0",
+    "moment": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.0",
+    "@types/core-js": "^0.9.43",
+    "@types/jquery": "^3.0.0",
+    "@types/lodash": "^4.0.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "0.28.7",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^3.0.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.0.0",
+    "npm-run-all": "^4.1.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.0.0",
+    "style-loader": "0.19.0",
+    "ts-loader": "^5.0.0",
+    "typescript": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.0.0"
+  }
+}
